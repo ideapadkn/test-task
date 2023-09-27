@@ -17,11 +17,12 @@ import Inventory from '../components/Inventory.vue';
 </template>
 
 <style lang="scss" scoped>
-  .main {
-    margin-bottom: 24px;
-    &__content {
-      display: flex;
-      gap: 24px;
-    }
+.main {
+  margin-bottom: 24px;
+
+  &__content {
+    display: flex;
+    gap: 24px;
   }
+}
 </style>

@@ -59,5 +59,4 @@ const hide = () => {
       color: #ffffff;
     }
   }
-}
-</style>
+}</style>

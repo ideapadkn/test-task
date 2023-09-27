@@ -45,6 +45,7 @@
   align-items: center;
   flex-direction: column;
   height: 500px;
+
   &__content {
     text-align: center;
 
