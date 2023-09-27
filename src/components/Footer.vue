@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-  <div class="container">
+  <div>
     <div class="footer">
       <div class="footer__content">
 

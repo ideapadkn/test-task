@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="container">
+  <div>
     <div class="menu">
       <div class="menu__content">
         <div class="menu__content-img">
@@ -44,8 +44,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 24px;
-
+  height: 500px;
   &__content {
     text-align: center;
 
@@ -57,13 +56,13 @@
 
     &-title {
       color: #fff;
-      font-size: 32px;
+      font-size: 24px;
 
     }
 
     &-text {
       color: #fff;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 150%;
       width: 190px;
     }

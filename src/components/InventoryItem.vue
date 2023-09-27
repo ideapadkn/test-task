@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="container">
+  <div>
     <div class="inventory__item">
       <div class="inventory__item-content">
 

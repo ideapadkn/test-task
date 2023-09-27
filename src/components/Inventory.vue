@@ -2,14 +2,36 @@
 import InventoryItem from './InventoryItem.vue';
 import { ref } from 'vue'
 const items = ref([])
-
-
 </script>
 
 <template>
-  <div class="container">
+  <div>
     <div class="inventory">
-      <InventoryItem v-for="item in items" :key="item.id" />
+      <InventoryItem />
+      <InventoryItem />
+      <InventoryItem />
+      <InventoryItem />
+      <InventoryItem />
+      <InventoryItem />
+      <InventoryItem />
+      <InventoryItem />
+      <InventoryItem />
+      <InventoryItem />
+      <InventoryItem />
+      <InventoryItem />
+      <InventoryItem />
+      <InventoryItem />
+      <InventoryItem />
+      <InventoryItem />
+      <InventoryItem />
+      <InventoryItem />
+      <InventoryItem />
+      <InventoryItem />
+      <InventoryItem />
+      <InventoryItem />
+      <InventoryItem />
+      <InventoryItem />
+      <InventoryItem />
     </div>
   </div>
 </template>
@@ -17,9 +39,12 @@ const items = ref([])
 
 <style lang="scss" scoped>
 .inventory {
-  border-radius: 12px;
+  display: flex;
+  flex-wrap: wrap;
   background-color: rgba(38, 38, 38, 1);
-  width: 525px;
+  border-radius: 12px;
   height: 500px;
+  overflow: hidden;
+  border: 1px solid rgba(77, 77, 77, 1);
 }
 </style>

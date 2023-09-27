@@ -1,9 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: rgb(27, 27, 27);
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 817px;
+  margin: 5% auto;
   padding: 0 15px;
 }

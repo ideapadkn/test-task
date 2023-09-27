@@ -5,7 +5,7 @@ import Inventory from '../components/Inventory.vue';
 </script>
 
 <template>
-  <div>
+  <div class="container">
     <div class="main">
       <div class="main__content">
         <Menu />
@@ -18,9 +18,9 @@ import Inventory from '../components/Inventory.vue';
 
 <style lang="scss" scoped>
   .main {
+    margin-bottom: 24px;
     &__content {
       display: flex;
-      align-items: center;
       gap: 24px;
     }
   }
