@@ -1,37 +1,11 @@
 <script setup>
 import InventoryItem from './InventoryItem.vue';
-import { ref } from 'vue'
-const items = ref([])
 </script>
 
 <template>
   <div>
     <div class="inventory">
-      <InventoryItem />
-      <InventoryItem />
-      <InventoryItem />
-      <InventoryItem />
-      <InventoryItem />
-      <InventoryItem />
-      <InventoryItem />
-      <InventoryItem />
-      <InventoryItem />
-      <InventoryItem />
-      <InventoryItem />
-      <InventoryItem />
-      <InventoryItem />
-      <InventoryItem />
-      <InventoryItem />
-      <InventoryItem />
-      <InventoryItem />
-      <InventoryItem />
-      <InventoryItem />
-      <InventoryItem />
-      <InventoryItem />
-      <InventoryItem />
-      <InventoryItem />
-      <InventoryItem />
-      <InventoryItem />
+      <InventoryItem v-for="(item, index) of new Array(25)" :key="index" />
     </div>
   </div>
 </template>
