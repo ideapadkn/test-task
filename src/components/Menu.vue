@@ -1,33 +1,16 @@
-<script setup>
-
-</script>
-
 <template>
   <div>
     <div class="menu">
       <div class="menu__content">
         <div class="menu__content-img">
-          <svg xmlns="http://www.w3.org/2000/svg" width="208" height="240" viewBox="0 0 208 240" fill="none">
-            <g filter="url(#filter0_b_0_68)">
-              <rect width="208" height="240" rx="8" fill="white" fill-opacity="0.1" />
-            </g>
-            <defs>
-              <filter id="filter0_b_0_68" x="-12" y="-12" width="232" height="264" filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feGaussianBlur in="BackgroundImageFix" stdDeviation="6" />
-                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_0_68" />
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_0_68" result="shape" />
-              </filter>
-            </defs>
-          </svg>
+          <img src="https://img.freepik.com/premium-photo/lake-landscape_967069-28.jpg" alt="">
         </div>
         <div class="menu__content-title">
           Menu Title
         </div>
         <p class="menu__content-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, ratione perspiciatis illum magni suscipit,
-          vitae qui, ut facere non doloribus in eveniet ipsum at sed quia. Impedit aliquam quos iste.
+          vitae qui, ut
         </p>
       </div>
     </div>
@@ -65,7 +48,6 @@
       color: #fff;
       font-size: 16px;
       line-height: 150%;
-      width: 190px;
     }
   }
 }

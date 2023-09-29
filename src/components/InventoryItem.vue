@@ -26,54 +26,40 @@ const onDrop = (event, list) => {
 </script>
 
 <template>
-  <div @drop="onDrop($event, 1)" @dragenter.prevent @dragover.prevent>
-    <div v-for="item in getList(1)" :key="item.id" draggable="true" @dragstart="startDrag($event, item)">
+  <div class="drop__zone" @drop="onDrop($event, 1)" @dragenter.prevent @dragover.prevent>
+    <div class="drop__zone-el" v-for="item in getList(1)" :key="item.id" draggable="true"
+      @dragstart="startDrag($event, item)">
       {{ item.title }}
     </div>
   </div>
-  <div @drop="onDrop($event, 2)" @dragenter.prevent @dragover.prevent>
-    <div v-for="item in getList(2)" :key="item.id" draggable="true" @dragstart="startDrag($event, item)">
+  <div class="drop__zone" @drop="onDrop($event, 2)" @dragenter.prevent @dragover.prevent>
+    <div class="drop__zone-el" v-for="item in getList(2)" :key="item.id" draggable="true"
+      @dragstart="startDrag($event, item)">
       {{ item.title }}
     </div>
   </div>
-  <div @drop="onDrop($event, 3)" @dragenter.prevent @dragover.prevent>
-    <div v-for="item in getList(3)" :key="item.id" draggable="true" @dragstart="startDrag($event, item)">
+  <div class="drop__zone" @drop="onDrop($event, 3)" @dragenter.prevent @dragover.prevent>
+    <div class="drop__zone-el" v-for="item in getList(3)" :key="item.id" draggable="true"
+      @dragstart="startDrag($event, item)">
       {{ item.title }}
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
-.inventory__item {
+.drop__zone {
   border: 1px solid rgba(77, 77, 77, 1);
-  width: 105px;
   height: 100px;
+  width: 105px;
 
-  &-content {
+  &-el {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100px;
-    position: relative;
-
-    .ul {
-      list-style: none;
-
-    }
-
-    &-item {
-      display: flex;
-    }
-
-    &-id {
-      padding: 2px;
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      border: 1px solid rgba(77, 77, 77, 1);
-      border-top-left-radius: 12px;
-      color: rgba(77, 77, 77, 1);
-    }
+    width: 105px;
+    cursor: pointer;
+    color: #fff;
   }
 }
 </style>
